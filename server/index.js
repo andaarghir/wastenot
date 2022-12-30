@@ -15,6 +15,6 @@ const corsOptions = {
     credentials: true,
 };
 app.use(cors(corsOptions));
-
+app.use('', mealRouter);
 
 app.listen(3001, () => { console.log("Server started") });

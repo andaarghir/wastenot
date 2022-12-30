@@ -27,3 +27,6 @@ router.get(PREFIX + '/meals',
             }
         );
     });
+
+    // RUN SERVER
+module.exports = router;

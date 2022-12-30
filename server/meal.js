@@ -1,10 +1,10 @@
 
 
 /**
- * Constructor function for new Exam objects
+ * Constructor function for new Meal objects
  * @param {number} id meal id 
  * @param {string} title meal title
- * @param {string} description number of credits (e.g. 6)
+ * @param {string} description 
  * @param {string} category
  * @param {string} allergens 
  * @param {string} options
@@ -22,14 +22,14 @@ function Meal(id, title, description, category, allergens, options, price) {
 
 
 /**
- * Create a new empty transcript object (a list of Exam objects)
+ * Create a new empty transcript object (a list of Meal objects)
  */
 function MealList() {
     this.mealList = [];
 
     /**
-     * Add a new exam to the list
-     * @param {Meal} meal the exam to be added
+     * Add a new meal to the list
+     * @param {Meal} meal the meal to be added
      */
     this.add = (meal) => {
         this.mealList.push(meal);
