@@ -4,15 +4,17 @@
  * Constructor function for new Meal objects
  * @param {number} id meal id 
  * @param {string} title meal title
+ * @param {number} user_id user id 
  * @param {string} description 
  * @param {string} category
  * @param {string} allergens 
  * @param {string} options
  * @param {number} price
  */
-function Meal(id, title, description, category, allergens, options, price) {
+function Meal(id, title, user_id, description, category, allergens, options, price) {
     this.id = id;
     this.title = title;
+    this.user_id = user_id;
     this.description = description;
     this.category = category;
     this.allergens = allergens;

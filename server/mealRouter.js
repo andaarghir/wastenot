@@ -28,5 +28,34 @@ router.get(PREFIX + '/meals',
         );
     });
 
+// GET meal by category, price
+router.get(PREFIX + '/meals/:category/:price',
+    (req, res) => {
+        dao.searchMeal(req.params.category, req.params.price).then(
+            (value) => {
+                res.json(value);
+            }
+        ).catch(
+            (err) => {
+                res.status(500).json({ error: err });
+            }
+        );
+    });
+
+
+// POST meal
+
+router.post(PREFIX + '/meals',
+    
+    async (req, res) => {
+        const meal = req.body;
+        try {
+            const value = await dao.addMeal(meal);
+            res.end();
+        } catch (e) {
+            res.status(400).json({ error: e });
+        }
+    });    
+
     // RUN SERVER
 module.exports = router;
