@@ -17,7 +17,7 @@ function readMeals() {
                 reject(err);
             } else {
                 resolve(rows.map((m) =>
-                    new Meal(m.id, m.title, m.user_id, m.description, m.category, m.allergens, m.options, m.price),
+                    new Meal(m.id, m.title, m.user_id, m.description, m.category, m.allergens, m.option, m.price),
                 ));
             }
         });
@@ -35,7 +35,7 @@ function searchMeal(category, price) {
                 reject(err);
             } else {
                 resolve(rows.map((m) =>
-                    new Meal(m.id, m.title, m.user_id, m.description, m.category, m.allergens, m.options, m.price),
+                    new Meal(m.id, m.title, m.user_id, m.description, m.category, m.allergens, m.option, m.price),
                 ));
             }
         });
@@ -44,8 +44,8 @@ function searchMeal(category, price) {
 
 function addMeal(meal) {
     return new Promise((resolve, reject) => {
-        const sql = 'INSERT INTO meal (title, user_id) VALUES(?,?)';
-        db.run(sql, [meal.title, meal.user_id], (err) => {
+        const sql = `INSERT INTO meal (title, user_id, description, category, allergens, option, price) VALUES(?,?,?,?,?,?,?)`;
+        db.run(sql, [meal.title, meal.user_id, meal.description, meal.category, meal.allergens, meal.option, meal.price], (err) => {
             if (err) {
                 reject(err);
             } else {

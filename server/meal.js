@@ -8,17 +8,17 @@
  * @param {string} description 
  * @param {string} category
  * @param {string} allergens 
- * @param {string} options
+ * @param {string} option
  * @param {number} price
  */
-function Meal(id, title, user_id, description, category, allergens, options, price) {
+function Meal(id, title, user_id, description, category, allergens, option, price) {
     this.id = id;
     this.title = title;
     this.user_id = user_id;
     this.description = description;
     this.category = category;
     this.allergens = allergens;
-    this.options = options;
+    this.option = option;
     this.price = price;
 }
 
