@@ -57,5 +57,18 @@ router.post(PREFIX + '/meals',
         }
     });    
 
+    //DELETE meal
+    
+router.delete(PREFIX + '/meals/delete/:id',
+  //  isLoggedIn,
+    async (req, res) => {
+        try {
+            const value = await dao.deleteMeal(req.params.id);
+            res.end();
+        } catch (e) {
+            res.status(400).json({ error: e });
+        }
+    });    
+
     // RUN SERVER
 module.exports = router;

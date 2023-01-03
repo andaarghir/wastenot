@@ -55,4 +55,17 @@ function addMeal(meal) {
     });
 }
 
-module.exports = {readMeals, searchMeal, addMeal}
+
+function deleteMeal(id) {
+    return new Promise((resolve, reject) => {
+        const sql = 'DELETE from meal WHERE id = ?';
+        db.run(sql, [id], (err) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(true);
+            }
+        });
+    });
+}
+module.exports = {readMeals, searchMeal, addMeal, deleteMeal}
