@@ -1,0 +1,22 @@
+GET http://localhost:3001/api/v1/meals
+
+###
+
+POST http://localhost:3001/api/v1/meals 
+
+Content-Type: application/json
+
+{
+    "title": "Test Test 3",
+    "user_id": 1,
+    "description": "LALALA",
+    "category": "soup",
+    "option": "vegan",
+    "allergens": "gluten"
+
+}
+
+###
+
+//Get soup with price under 9
+GET http://localhost:3001/api/v1/meals/soup/9
