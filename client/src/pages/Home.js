@@ -5,15 +5,18 @@ import "../styles/Home.css";
 
 function Home() {
   return (
+    <>
     <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
       <div className="headerContainer">
         <h1> WasteNot </h1>
         <p> Share with others, don't waste food.</p>
-        <Link to="/menu">
-          <button> SEARCH </button>
+        <Link to="/search">
+          <button
+          > SEARCH </button>
         </Link>
       </div>
     </div>
+    </>
   );
 }
 
