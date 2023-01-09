@@ -29,9 +29,9 @@ router.get(PREFIX + '/meals',
     });
 
 // GET meal by category, price
-router.get(PREFIX + '/meals/:category/:price',
+router.get(PREFIX + '/meals/:category/:price/:city/:option',
     (req, res) => {
-        dao.searchMeal(req.params.category, req.params.price).then(
+        dao.searchMeal(req.params.category, req.params.price, req.params.city, req.params.option).then(
             (value) => {
                 res.json(value);
             }

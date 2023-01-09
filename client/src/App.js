@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import SearchPage from "./pages/SearchPage";
+import SearchMeal from "./pages/SearchMeal";
+import ShowMeals from "./pages/ShowMeals";
+import SearchEvent from "./pages/SearchEvent";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import { BrowserRouter , Route, Routes } from "react-router-dom";
@@ -19,6 +22,9 @@ function App() {
           <Route path="/search"  element={<SearchPage/>} />
           <Route path="/about"  element={<About/>} />
           <Route path="/contact"  element={<Contact/>} />
+          <Route path="/meals"  element={<SearchMeal/>} />
+          <Route path="/showmeals"  element={<ShowMeals/>} />
+          <Route path="/events"  element={<SearchEvent/>} />
         </Routes>
       <Footer/>
       </BrowserRouter>

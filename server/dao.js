@@ -24,13 +24,13 @@ function readMeals() {
     });
 }
 
-function searchMeal(category, price) {
+function searchMeal(category, price, city, option) {
     return new Promise((resolve, reject) => {
         const sql = `
         SELECT * 
         FROM meal 
-        WHERE category=? AND price <=?`;
-        db.all(sql, [category, price], (err, rows) => {
+        WHERE category=? AND price <=? AND city=? and option=?`;
+        db.all(sql, [category, price, city, option], (err, rows) => {
             if (err) {
                 reject(err);
             } else {
