@@ -70,5 +70,63 @@ router.delete(PREFIX + '/meals/delete/:id',
         }
     });    
 
+
+    // GET events
+
+router.get(PREFIX + '/events',
+(req, res) => {
+    dao.readEvents().then(
+        (value) => {
+            res.json(value);
+        }
+    ).catch(
+        (err) => {
+            res.status(500).json({ error: err });
+        }
+    );
+});
+
+
+// GET event by category, price
+router.get(PREFIX + '/events/:date/:price/:city',
+    (req, res) => {
+        dao.searchEvent(req.params.date, req.params.price, req.params.city).then(
+            (value) => {
+                res.json(value);
+            }
+        ).catch(
+            (err) => {
+                res.status(500).json({ error: err });
+            }
+        );
+    });
+
+
+// POST event
+
+router.post(PREFIX + '/events',
+    
+    async (req, res) => {
+        const event = req.body;
+        try {
+            const value = await dao.addEvent(event);
+            res.end();
+        } catch (e) {
+            res.status(400).json({ error: e });
+        }
+    });    
+
+    //DELETE event
+    
+router.delete(PREFIX + '/events/delete/:id',
+  //  isLoggedIn,
+    async (req, res) => {
+        try {
+            const value = await dao.deleteEvent(req.params.id);
+            res.end();
+        } catch (e) {
+            res.status(400).json({ error: e });
+        }
+    });    
     // RUN SERVER
 module.exports = router;

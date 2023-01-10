@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import { BrowserRouter , Route, Routes } from "react-router-dom";
 import { Container } from 'react-bootstrap';
+import ShowEvents from "./pages/ShowEvents";
 
 function App() {
   return <>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/meals"  element={<SearchMeal/>} />
           <Route path="/showmeals"  element={<ShowMeals/>} />
           <Route path="/events"  element={<SearchEvent/>} />
+          <Route path="/showevents"  element={<ShowEvents/>} />
         </Routes>
       <Footer/>
       </BrowserRouter>

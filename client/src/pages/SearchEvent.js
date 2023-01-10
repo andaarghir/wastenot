@@ -32,8 +32,7 @@ function SearchEvent() {
 
     //Set parameters for the Forms as empty.
     const [city, setCity] = useState("");
-    const [category, setCategory] = useState("");
-    const [option, setOption] = useState(null);
+    const [option, setOption] = useState("");
     const [price, setPrice] = useState("");
     let navigate = useNavigate();
     const [startDate, setStartDate] = useState(new Date());
@@ -44,7 +43,7 @@ function SearchEvent() {
     const handleSubmit = (event) => {
       event.preventDefault();
       navigate(
-        `/showmeals/?city=${city}&price=${price}&category=${category}&option=${option}`
+        `/showevents/?date=${startDate}&price=${price}&city=${city}`
       );
     }
 

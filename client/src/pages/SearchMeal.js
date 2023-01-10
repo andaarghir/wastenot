@@ -31,7 +31,7 @@ function SearchMeal() {
     //Set parameters for the Forms as empty.
     const [city, setCity] = useState("");
     const [category, setCategory] = useState("");
-    const [option, setOption] = useState(null);
+    const [option, setOption] = useState("all");
     const [price, setPrice] = useState("");
     let navigate = useNavigate();
 

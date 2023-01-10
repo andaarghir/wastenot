@@ -10,8 +10,9 @@
  * @param {string} allergens 
  * @param {string} option
  * @param {number} price
+ * @param {string} img
  */
-function Meal(id, title, user_id, description, category, allergens, option, price) {
+function Meal(id, title, user_id, description, category, allergens, option, price, img) {
     this.id = id;
     this.title = title;
     this.user_id = user_id;
@@ -20,6 +21,7 @@ function Meal(id, title, user_id, description, category, allergens, option, pric
     this.allergens = allergens;
     this.option = option;
     this.price = price;
+    this.img = img;
 }
 
 
