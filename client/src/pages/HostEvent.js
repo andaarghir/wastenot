@@ -183,7 +183,7 @@ function HostEvent() {
                     className="btn btn-secondary search-button"
                     onClick={(e) => handleSubmit(e)}
                   >
-                    Search
+                    Add event
                   </button>
                 </div>
               </div>

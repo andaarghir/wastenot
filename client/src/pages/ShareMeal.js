@@ -37,7 +37,8 @@ function ShareMeal() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     await addNewMeal(title, 1, description, category, allergens, option, price, city, image);
-    navigate('/search')
+    // navigate('/search')
+    console.log(category);
 
   }
 
@@ -174,7 +175,7 @@ function ShareMeal() {
                     className="btn btn-secondary search-button"
                     onClick={(e) => handleSubmit(e)}
                   >
-                    Search
+                    Add meal
                   </button>
                 </div>
               </div>
