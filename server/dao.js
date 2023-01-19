@@ -45,8 +45,8 @@ function searchMeal(category, price, city, option) {
 
 function addMeal(meal) {
     return new Promise((resolve, reject) => {
-        const sql = `INSERT INTO meal (title, user_id, description, category, allergens, option, price, img) VALUES(?,?,?,?,?,?,?,?)`;
-        db.run(sql, [meal.title, meal.user_id, meal.description, meal.category, meal.allergens, meal.option, meal.price, meal.img], (err) => {
+        const sql = `INSERT INTO meal (title, user_id, description, category, allergens, option, price, city, img) VALUES(?,?,?,?,?,?,?,?,?)`;
+        db.run(sql, [meal.title, meal.user_id, meal.description, meal.category, meal.allergens, meal.option, meal.price, meal.city, meal.img], (err) => {
             if (err) {
                 reject(err);
             } else {
@@ -107,7 +107,7 @@ function searchEvent(date, price, city) {
 function addEvent(event) {
     return new Promise((resolve, reject) => {
         const sql = `INSERT INTO event (title, user_id, menu_id, description, price, max_guests, address, city, date, menu) VALUES(?,?,?,?,?,?,?,?,?,?)`;
-        db.run(sql, [event.id, event.title, event.user_id, event.menu_id, event.description, event.price, event.max_guests, event.address, event.city, event.date, event.menu], (err) => {
+        db.run(sql, [event.title, event.user_id, event.menu_id, event.description, event.price, event.max_guests, event.address, event.city, event.date, event.menu], (err) => {
             if (err) {
                 reject(err);
             } else {
