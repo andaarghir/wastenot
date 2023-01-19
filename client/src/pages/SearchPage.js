@@ -10,36 +10,38 @@ import "../styles/SearchPage.css";
 function SearchPage() {
   return (
     <>
-    <div className="image-gallery">
-    <div className="row">
-    <Link to="/meals">
-      <img src={img1}/>
-      </Link>
-      <img src={img2}/>
-    </div>
-    <div className="column">
-    <Link to="/events">
-      <img src={img3}/>
-      </Link>
-      <img src={img4}/>
+      <div className="image-gallery">
+        <div className="row">
+          <Link to="/meals">
+            <img src={img1} />
+          </Link>
+          <img src={img2} />
+        </div>
+        <div className="column">
+          <Link to="/events">
+            <img src={img3} />
+          </Link>
+          <img src={img4} />
+        </div>
       </div>
-    </div>
-    <div className="image-gallery-captions">
-    <div className="row">
-    <div className="column">
-      <Link to="/meals">
-      <small>Search for a meal</small>
-      </Link>
-      <small>Share a meal</small>
-      <Link to="/events">
-      <small>Search for an event</small>
-      </Link>
-      <small>Host an event</small>
-    </div>
-    </div>
-      </div>
-      <div className="search-paragraph">
-      <p>Enjoy a lovely and warm homemade meal, and discover a new cusine, or attend an eating event and meet new people! Your choice!</p>
+      <div className="image-gallery-captions">
+        <div className="row">
+          <div className="column">
+            <Link to="/meals">
+              <small>Search for a meal</small>
+            </Link>
+            <small>Share a meal</small>
+            <Link to="/events">
+              <small>Search for an event</small>
+            </Link>
+            <Link to="/hostevent">
+              <small>Host an event</small>
+            </Link>
+          </div>
+        </div>
+        <div className="search-paragraph">
+          <p>Enjoy a lovely and warm homemade meal, and discover a new cusine, or attend an eating event and meet new people! Your choice!</p>
+        </div>
       </div>
     </>
   );
