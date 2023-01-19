@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import { BrowserRouter , Route, Routes } from "react-router-dom";
 import { Container } from 'react-bootstrap';
 import ShowEvents from "./pages/ShowEvents";
+import ShareMeal from "./pages/ShareMeal";
 
 function App() {
   return <>
@@ -29,6 +30,7 @@ function App() {
           <Route path="/events"  element={<SearchEvent/>} />
           <Route path="/showevents"  element={<ShowEvents/>} />
           <Route path="/hostevent"  element={<HostEvent/>} />
+          <Route path="/shareMeal"  element={<ShareMeal/>} />
         </Routes>
       <Footer/>
       </BrowserRouter>

@@ -30,9 +30,11 @@ function SearchPage() {
             <Link to="/meals">
               <small>Search for a meal</small>
             </Link>
-            <small>Share a meal</small>
+            <Link to="/shareMeal">
+                <small>Share a meal</small>
+            </Link>
             <Link to="/events">
-              <small>Search for an event</small>
+                <small>Search for an event</small>
             </Link>
             <Link to="/hostevent">
               <small>Host an event</small>
