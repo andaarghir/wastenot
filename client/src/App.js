@@ -11,6 +11,8 @@ import Contact from "./pages/Contact";
 import { BrowserRouter , Route, Routes } from "react-router-dom";
 import { Container } from 'react-bootstrap';
 import ShowEvents from "./pages/ShowEvents";
+import LogIn from "./pages/LogIn";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return <>
@@ -27,6 +29,8 @@ function App() {
           <Route path="/showmeals"  element={<ShowMeals/>} />
           <Route path="/events"  element={<SearchEvent/>} />
           <Route path="/showevents"  element={<ShowEvents/>} />
+          <Route path="/signup"  element={<SignUp/>} />
+          <Route path="/login"  element={<LogIn/>} />
         </Routes>
       <Footer/>
       </BrowserRouter>

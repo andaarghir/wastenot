@@ -10,10 +10,8 @@ function Home() {
       <div className="headerContainer">
         <h1> WasteNot </h1>
         <p> Share with others, don't waste food.</p>
-        <Link to="/search">
-          <button
-          > SEARCH </button>
-        </Link>
+        <Link to="/login"><button style={{marginRight:"20px"}}> LOGIN </button></Link>
+        <Link to="/signup"><button> SIGNUP </button></Link>
       </div>
     </div>
     </>
