@@ -6,6 +6,7 @@ import SearchPage from "./pages/SearchPage";
 import SearchMeal from "./pages/SearchMeal";
 import ShowMeals from "./pages/ShowMeals";
 import SearchEvent from "./pages/SearchEvent";
+import HostEvent from "./pages/HostEvent";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import { BrowserRouter , Route, Routes } from "react-router-dom";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/showmeals"  element={<ShowMeals/>} />
           <Route path="/events"  element={<SearchEvent/>} />
           <Route path="/showevents"  element={<ShowEvents/>} />
+          <Route path="/hostevent"  element={<HostEvent/>} />
         </Routes>
       <Footer/>
       </BrowserRouter>

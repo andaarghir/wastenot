@@ -107,7 +107,7 @@ function searchEvent(date, price, city) {
 function addEvent(event) {
     return new Promise((resolve, reject) => {
         const sql = `INSERT INTO event (title, user_id, menu_id, description, price, max_guests, address, city, date, menu) VALUES(?,?,?,?,?,?,?,?,?,?)`;
-        db.run(sql, [event.id, event.title, event.user_id, event.menu_id, event.description, event.price, event.max_guests, event.address, event.city, event.date, event.menu], (err) => {
+        db.run(sql, [event.title, event.user_id, event.menu_id, event.description, event.price, event.max_guests, event.address, event.city, event.date, event.menu], (err) => {
             if (err) {
                 reject(err);
             } else {
