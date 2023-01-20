@@ -1,4 +1,4 @@
-.container3{
+.container-auth{
     background-color: rgb(170, 144, 59);
     margin-top: 10px;
     opacity: 0.85;
@@ -7,85 +7,56 @@
     margin-right: 400px;
 }
 
-h2{
+.title-auth{
     text-align: center;
     padding-top: 10px;
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
 }
-
-.mb-4{
-    color: #f0f0f0;
-    margin-left: 10px;
-    font-size:large;
-    
-  }
-
-.col-25{
-    margin-right: 10px;
-}
-
-.form-control{
-    border: none;
-    border-bottom: 1px solid black;
-
-}
-
-/* input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  } */
-  
-label {
-padding: 12px 12px 12px 0;
-display: inline-block;
-}
-
-input[type=submit] {
-background-color: #04AA6D;
-color: white;
-padding: 12px 20px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-float: right;
-}
-
-input[type=submit]:hover {
-background-color: #45a049;
-} 
 
 .card-body {
     border-radius: 20px;
     background-color: rgb(170, 144, 59);
-  }
-  
-.col-25 {
-float: left;
-width: 35%;
-margin-top: 6px;
 }
 
-.col-75 {
-float: left;
-width: 95%;
-margin-top: 6px;
-}
+.row-auth:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
 
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-
-
-@media screen and (max-width: 600px) {
-.col-25, .col-75, input[type=submit] {
+.col-name {
+    margin-left: 50px;
+    width: 35%;
+    margin-top: 6px;
+    margin-right: 10px;
+    }
+    
+.col-field {
+    margin-left: 50px;
     width: 100%;
-    margin-top: 0;
+    margin-top: 6px;
+
 }
+
+.mb-auth{
+    color: #f0f0f0;
+    margin-left: 10px;
+    font-size:large;
+  }
+
+.form-auth{
+    
+    border: none;
+    border-bottom: 1px groove black;
+
 }
+
+input[type=auth]:focus {
+    border: 3px solid #555;
+}
+
 
 
 .invalidlogin {
