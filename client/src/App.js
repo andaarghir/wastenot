@@ -15,6 +15,8 @@ import ShowEvents from "./pages/ShowEvents";
 import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import ShareMeal from "./pages/ShareMeal";
+import Payment from "./pages/Payment";
+import PaymentAccepted from "./pages/PaymentAccepted";
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
           <Route path="/login"  element={<LogIn/>} />
           <Route path="/hostevent" element={<HostEvent/>} />
           <Route path="/shareMeal" element={<ShareMeal/>} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/accepted" element={<PaymentAccepted />} />
         </Routes>
       <Footer/>
       </BrowserRouter>

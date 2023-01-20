@@ -44,7 +44,7 @@ const SignIn = () => {
                                         <label className="mb-4">Password: </label>
                                     </div>
                                     <div className="col-75">
-                                        <input type = "text" id="fname" placeholder = "Enter password..." name = "password" className = "form-control"
+                                        <input type = "password" id="fname" placeholder = "Enter password..." name = "password" className = "form-control"
                                             //value = {username}
                                             //</div>onChange = {(event) => setUsername(event.target.value)}
                                             ></input>
