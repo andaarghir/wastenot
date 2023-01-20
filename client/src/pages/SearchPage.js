@@ -25,7 +25,7 @@ function SearchPage() {
         </div>
       </div>
       <div className="image-gallery-captions">
-        <div className="row">
+        <div className="row-captions">
           <div className="column">
             <Link to="/meals">
               <small>Search for a meal</small>
