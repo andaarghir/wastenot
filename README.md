@@ -41,11 +41,11 @@ npm start
 
 ## Screenshots
 
-![Homepage](./Screenshot1.pngt."Homepage")
+![Homepage](./Screenshot1.png)
 
-![Main Menu](screenshot.png "Main Menu")
+![Main Menu](./Screenshot2.png)
 
-![Search for an event](screenshot.png "Search for an event")
+![Search for an event](./Screenshot3.png)
 
 Project developed by:
 - Arghir Anda-Valentina
