@@ -44,7 +44,7 @@ const SignIn = () => {
                                         <label className="mb-auth">Password: </label>
                                     </div>
                                     <div className="col-field">
-                                        <input type = "auth" placeholder = "Enter password..." name = "password" className = "form-auth"
+                                        <input type = "password" placeholder = "Enter password..." name = "password" className = "form-auth"
                                             //value = {username}
                                             //</div>onChange = {(event) => setUsername(event.target.value)}
                                             ></input>

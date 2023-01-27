@@ -53,21 +53,27 @@
 
 }
 
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+
 input[type=auth]:focus {
     border: 3px solid #555;
 }
 
-input[type=auth] {
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    background-color: rgb(240, 213, 122);
-  }
-  
-.mb-auth {
-padding: 12px 12px 12px 0;
-display: inline-block;
+
+.invalidlogin {
+    color: rgb(22, 3, 233);
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.btn-Payment{
+    background-color:rgb(212, 175, 7);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: large;
+    border-radius: 5%;
+    border-color: rgb(212, 175, 7);
+
 }

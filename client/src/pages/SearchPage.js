@@ -15,13 +15,17 @@ function SearchPage() {
           <Link to="/meals">
             <img src={img1} />
           </Link>
-          <img src={img2} />
+          <Link to="/shareMeal">
+            <img src={img2} />
+          </Link>
         </div>
         <div className="column">
           <Link to="/events">
             <img src={img3} />
           </Link>
-          <img src={img4} />
+          <Link to="/hostevent">
+            <img src={img4} />
+          </Link>
         </div>
       </div>
       <div className="image-gallery-captions">
